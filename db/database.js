@@ -1,5 +1,5 @@
-const MongoDB = require('mongodb');
-const { config } = require('../config');
+import MongoDB from 'mongodb';
+import { config } from '../config.js';
 
 let db;
 export function connectMongoDB() {
@@ -9,6 +9,9 @@ export function connectMongoDB() {
     }).then((client) => {
         db = client.db();
     });
+}
+export function getKakaoResult() {
+    return db.collection('kakaoResult');
 }
 
 export function getCRM() {

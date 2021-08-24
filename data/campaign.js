@@ -1,7 +1,8 @@
-const mongoDB = require('mongodb');
-const { getCRM } = require('../db/database');
+import mongoDB from 'mongodb';
+import { getKakaoResult } from '../db/database.js';
+
 const ObjectID = mongoDB.ObjectId;
 
 export async function create(info) {
-    getCRM().insertOne(info);
+    return getKakaoResult().insertOne(info);
 }

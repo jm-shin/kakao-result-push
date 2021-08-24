@@ -1,5 +1,5 @@
-const express = require('express');
-const campaignController = require('../controller/campaign');
+import express from 'express';
+import * as campaignController from '../controller/campaign.js';
 
 const router = express.Router();
 
