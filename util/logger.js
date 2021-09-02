@@ -54,13 +54,13 @@ const transports = [
         level: 'error',
         datePattern: 'MM-DD', //'YYYY-MM-DD',
         dirname: logDir + '/error',
-        filename: '%DATE%.error.log', //%DATE% <datePattern
+        filename: '%DATE%.error.log', //%DATE%
         maxFiles: 30,
         zippedArchive: true
     }),
     new winstonDaily({
         level: 'info',
-        datePattern: 'MM-DD',
+        datePattern: 'YYYY-MM-DD',
         dirname: logDir,
         filename: '%DATE%.log',
         maxFiles: 30,
