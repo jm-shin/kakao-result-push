@@ -17,4 +17,3 @@ export const config = {
         host: required('DB_MONGO_HOST'),
     }
 }
-
